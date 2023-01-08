@@ -9,8 +9,138 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <link rel="icon" href="./images/SpartaIcon01.png" type="image/x-icon" sizes="16x16"></head>
+  <link rel="icon" href="./images/SpartaIcon01.png" type="image/x-icon" sizes="16x16">
   <link rel="icon" href="./images/파비콘/favicon.ico" type="image/x-icon">
+
+  <script>
+    function bt1() {
+      location.href = "index2.html";
+
+      alert('정답입니다')
+    }
+
+    function bt2() {
+      location.href = "index2.html";
+    }
+
+
+  </script>
+
+  <style>
+    
+* {
+    font-family: 'Galmuri11';
+}
+
+.bgimage {
+    
+    width:100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    
+    
+
+}
+.bgimage::after {
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("./images/SpartaIcon01.png");
+    background-size: 120px;
+    background-repeat: space;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+
+    
+    
+}
+
+.title {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    position:relative;
+    margin: 50px;
+
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+.title:after {
+	content: '';
+	position: absolute; 
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 45px solid transparent;
+	border-top-color: rgb(255, 255, 255);
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -22.5px;
+	margin-bottom: -45px;
+
+}
+
+.title:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 208px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top-color: black;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -22.5px;
+    margin-bottom: -50px;
+    }
+
+.wrap {
+
+    width: 400px;
+    height: 100px;
+
+    margin: auto;
+    padding-top: 150px;
+    padding-right: 130px;
+}
+
+.img1 {
+
+    width: 200px;
+    height: 200px;
+    
+    margin-left: 100px;
+    margin-top: -10%;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+
+    padding: 15px;
+
+    position: relative;
+    left: 150px;
+    bottom: 100%;
+
+    font-size: 30px;
+
+}
+
+  </style>
+
+
+</head>
 
 <body bgcolor="#f5cae6">
   <div class="bgimage">
@@ -23,8 +153,8 @@
         <img src="./images/SpartaIcon03.png" alt="SpartaIcon03" width="200" height="200">
       </div>
       <div class="btn">
-        <button type="button" class="btn btn-success" onclick="location.href='index2.html'">맞음</button>
-        <button type="button" class="btn btn-danger" onclick="location.href='index2.html'">틀림</button>
+        <button type="button" class="btn btn-success" onclick="bt1()">맞음</button>
+        <button type="button" class="btn btn-danger" onclick="bt2()">틀림</button>
       </div>
     </div>
   </div>
